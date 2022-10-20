@@ -1,0 +1,25 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    arable (0.2.0)
+    byebug (11.1.3)
+    connection_pool (2.3.0)
+    dotenv (2.8.1)
+    rack (2.2.4)
+    redis (4.8.0)
+    sidekiq (6.5.7)
+      connection_pool (>= 2.2.5)
+      rack (~> 2.0)
+      redis (>= 4.5.0, < 5)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  arable
+  byebug
+  dotenv
+  sidekiq
+
+BUNDLED WITH
+   2.3.24
