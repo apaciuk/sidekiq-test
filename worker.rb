@@ -13,10 +13,13 @@ Sidekiq.configure_server do |config|
 
  class TestWorker 
     include Sidekiq::Worker
+    sidekiq_options retry: false
 
     def perform(complexity)
         case complexity 
         when "super_hard"
+            puts "Charging a credit card..."
+            raise "Credit card declined"
             sleep 20
             puts "Wow!, Worked super hard"
         when "hard"
