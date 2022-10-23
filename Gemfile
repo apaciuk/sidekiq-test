@@ -10,3 +10,4 @@ gem 'byebug'
 gem 'arable' # SQL query builder
 gem 'rack'
 gem 'sinatra'
+gem 'lefthook'
